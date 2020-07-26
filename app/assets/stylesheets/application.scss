@@ -31,12 +31,12 @@ header {
   position: fixed;
   z-index:10;
   list-style-type: none;
-  height: 70px;
+  height: 60px;
   margin-top:-10px;
   line-height:middle;
   background: $main_color;
   img {
-    width:180px;
+    width:150px;
     margin-top:5px;
     margin-left:10px;
   }
@@ -162,16 +162,18 @@ main {
              }
       }
 
+
+
 /*中央寄せ*/
 .center {
   text-align:center;
   margin:0 auto;
 }
 
-/*イエローライン*/
 .push {
     text-align:center;
     font-size:6.0vw;
+    margin:0px;
     color:orange;
     line-height:5.0vw;
     font-weight:bold;
