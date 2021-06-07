@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "info@comicomi.cc"
+  default from: "mail@k-speas.jp"
   def received_email(contact)
     @contact = contact
     mail to: "info@comicomi.cc"

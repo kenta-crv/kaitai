@@ -6,10 +6,10 @@ Rails.application.configure do
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
   address: 'smtp3.gmoserver.jp',
-  domain: 'comicomi.cc',
+  domain: 'mail@k-speas.jp',
   port: 587,
-  user_name: 'info@comicomi.cc',
-  password: 'BpX8$0Xu',
+  user_name: 'mail@k-speas.jp',
+  password: 'a$4yqvc3',
   authentication: 'plain',
   enable_starttls_auto: true
   }
