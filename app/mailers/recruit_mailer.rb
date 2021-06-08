@@ -1,6 +1,6 @@
 class RecruitMailer < ActionMailer::Base
-  default from: "mail@k-speas.jp"
-  default to: "mail@k-speas.jp"
+  default from: "kaitai.comicomi.cc"
+  default to: "kaitai.comicomi.cc"
 
   def received_email(recruit)
     @recruit = recruit
