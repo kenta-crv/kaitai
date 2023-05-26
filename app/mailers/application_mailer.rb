@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "mail@house.comicomi.cc"
+  default from: "kaitai@factoru.jp"
   layout 'mailer'
 end

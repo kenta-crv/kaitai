@@ -4,109 +4,119 @@ br
 
 = form_for(@contact, url: { action: :thanks }) do |f|
   .tops-wrapper
-    h2.heading
-      span> お問い合わせ内容確認
-      | フォーム
-    table.company
+    h2.headline  お問い合わせ内容確認
+    br
+    .company-wrapper
+     table.company.responsive-table
       colgroup
-        col width="10%"
-        col width="20%"
-        col width="70%"
+        col.col-1
+        col.col-2
+        col.col-3
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 氏名
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :first_name
           = @contact.first_name
           = f.hidden_field :last_name
           = @contact.last_name
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | シメイ
-        td
-         = f.hidden_field :first_kana
-         = @contact.first_kana
-         = f.hidden_field :last_kana
-         = @contact.last_kana
+        td.responsive-cell
+         .input-container
+           = f.hidden_field :first_kana
+           = @contact.first_kana
+           = f.hidden_field :last_kana
+           = @contact.last_kana
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 電話番号
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :tel
           = @contact.tel
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | メールアドレス
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :email
           = @contact.email
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 都道府県
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :prefecture
           = @contact.prefecture
-          | 県
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 市町村
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :city
           = @contact.city
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 番地以降
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :town
           = @contact.town
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 建物
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :build
           = @contact.build
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 総延床面積
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :area
           = @contact.area
           | 坪
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | 解体予定時期
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :introduction
           = @contact.introduction
           | ヶ月以内
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | 追記事項
-        td
+        td.responsive-cell
+         .input-container
           = f.hidden_field :remarks
           = @contact.remarks
       tr
         td colspan="3"
-          = f.submit "送信"
+          = f.submit "送信", class: "btn btn-success"

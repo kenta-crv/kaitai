@@ -8,76 +8,82 @@
   =image_tag 'contact.gif', width: '100%'
 
   .tops-wrapper
-    h1.headline-first
-      span> お問い合わせ
-      | フォーム
+    h2.headline  お問い合わせフォーム
     br
-    table.company
+    .company-wrapper
+     table.company.responsive-table
       colgroup
-        col width="10%"
-        col width="20%"
-        col width="70%"
+        col.col-1
+        col.col-2
+        col.col-3
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 氏名
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :first_name, class:"harf"
           = f.text_field :last_name, class:"harf"
           br
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | シメイ
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :first_kana, class:"harf"
           = f.text_field :last_kana, class:"harf"
           br
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 電話番号
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :tel
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | メールアドレス
-        td
+        td.responsive-cell
+         .input-container
           = f.email_field :email
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 都道府県
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :prefecture
-          |県
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 市区町村
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :city
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 番地以降
-        td
+        td.responsive-cell
+         .input-container
           = f.text_field :town
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 建物
-        td
-         = f.select(:build,[\
+        td.responsive-cell
+         .input-container
+          = f.select(:build,[\
            ["木造","木造"],\
            ["鉄骨造","鉄骨造"],\
            ["鉄筋コンクリート（RC）","鉄筋コンクリート（RC）"],\
@@ -86,19 +92,21 @@
            ["その他","その他"],
           ])
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 総延床面積
-        td
+        td.responsive-cell
+         .input-container
           = f.number_field :area
           | 坪
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 解体予定時期
-        td
+        td.responsive-cell
+         .input-container
           = f.select(:introduction,[\
              ["選択する","選択する"],\
              ["1ヶ月以内","1ヶ月以内"],\
@@ -107,12 +115,13 @@
              ["未定","未定"],
           ])
       tr
-        td
+        td.label-cell
           strong.label.label-blue 任意
-        td.arrow_box
+        td.arrow-box-cell
           | 追記事項
-        td
+        td.responsive-cell
+         .input-container
           = f.text_area :remarks
       tr
         td colspan="3"
-          = f.submit "確認"
+          = f.submit "確認", class: "btn btn-success"

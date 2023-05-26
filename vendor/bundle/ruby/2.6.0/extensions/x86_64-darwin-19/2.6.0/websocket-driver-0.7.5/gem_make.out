@@ -1,0 +1,15 @@
+current directory: /Users/okuyamakenta/Program/kaitai/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/okuyamakenta/.rbenv/versions/2.6.1/bin/ruby -I /Users/okuyamakenta/.rbenv/versions/2.6.1/lib/ruby/site_ruby/2.6.0 extconf.rb
+creating Makefile
+
+current directory: /Users/okuyamakenta/Program/kaitai/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230526-41989-ijaygt sitelibdir\=./.gem.20230526-41989-ijaygt clean
+
+current directory: /Users/okuyamakenta/Program/kaitai/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230526-41989-ijaygt sitelibdir\=./.gem.20230526-41989-ijaygt
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/okuyamakenta/Program/kaitai/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230526-41989-ijaygt sitelibdir\=./.gem.20230526-41989-ijaygt install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20230526-41989-ijaygt
