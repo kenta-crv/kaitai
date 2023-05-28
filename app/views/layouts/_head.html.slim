@@ -9,8 +9,10 @@ meta[name="viewport" content="width=device-width, initial-scale=1,0, initial-sca
 = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 = display_meta_tags(default_meta_tags)
 = favicon_link_tag('favicon.ico')
-javascript:
-  | fbq('track', 'ViewContent');
-  script[async src="https://www.googletagmanager.com/gtag/js?id=UA-173614759-1"]
-  script
-    |  window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-173614759-1'); 
+<!-- Google tag (gtag.js) -->
+script[async src="https://www.googletagmanager.com/gtag/js?id=AW-11196438312"]
+script
+ | window.dataLayer = window.dataLayer || [];
+ | function gtag(){dataLayer.push(arguments);}
+ | gtag('js', new Date());
+ | gtag('config', 'AW-11196438312');
